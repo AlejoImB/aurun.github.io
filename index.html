@@ -1,294 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AURUN - Calzado Futurista</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <meta name="description" content="AURUN - La tienda de calzado futurista con diseños innovadores y tecnología de vanguardia">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Preconexiones para mejorar el rendimiento -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<title>AURUN </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta name="description" content="AURUN - Descubre nuestra exclusiva colección de calzado que combina tendencia, innovación y estilo. Eleva tu estilo desde los pies con los mejores modelos de zapatillas.">
+<!-- Meta tags para SEO -->
+<meta name="keywords" content="calzado, zapatillas, sneakers, AURUN, moda, estilo, tendencias, zapatos deportivos">
+<meta name="author" content="AURUN">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tudominio.com/">
+<meta property="og:title" content="AURUN - Eleva tu estilo">
+<meta property="og:description" content="Descubre la colección exclusiva de calzado AURUN. Tendencia, innovación y estilo en cada par.">
+<meta property="og:image" content="img/principal.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.tudominio.com/">
+<meta property="twitter:title" content="AURUN - Eleva tu estilo">
+<meta property="twitter:description" content="Descubre la colección exclusiva de calzado AURUN. Tendencia, innovación y estilo en cada par.">
+<meta property="twitter:image" content="img/principal.png">
+<link rel="icon" href="img/icono.ico">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google Analytics (reemplaza UA-XXXXXXXX-X con tu ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 </head>
 <body>
-    <div class="container">
-        <!-- Navegación -->
-        <header>
-            <div class="logo">
-                <img src="img/hermes-rivera-wz_eb7K2Ip8-unsplash-removebg-preview.png" alt="Calzado Futurista SHOPSPHERE" style="width: 6%; height: auto;">
-                <a href="#home">AURUN</a>
-            </div>
-            <div class="main-nav">
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#catalog">CATÁLOGO</a></li>
-                        <li><a href="#about">NOSOTROS</a></li>
-                        <li><a href="#contact">CONTACTO</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="#catalog" class="buy-button">COMPRAR</a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </header>
-        
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1 class="hero-logo">AURUN</h1>
-                <p class="hero-tagline">Eleva tu estilo</p>
-                <div class="hero-image">
-                    <img src="img/f.png" alt="Calzado Futurista SHOPSPHERE">
-                </div>
-                <div class="hero-actions">
-                    <a href="#catalog" class="btn-discover">EXPLORAR</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Catálogo -->
-        <section class="catalog fade-in" id="catalog">
-            <h2 class="section-title">CATÁLOGO</h2>
-            <!-- Contenedor de productos -->
-            <div class="products-container">
-                <!-- Producto 1 - Hombre -->
-                <div class="product-card" data-category="hombre">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Neo Runner">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Producto 2 - Mujer -->
-                <div class="product-card" data-category="mujer">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Cyber Step">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Producto 3 - Hombre -->
-                <div class="product-card" data-category="hombre">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Quantum Boost">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Producto 4 - Niños -->
-                <div class="product-card" data-category="niños">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Pulse Wave">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Producto 5 - Mujer -->
-                <div class="product-card" data-category="mujer">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Electro Flex">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Producto 6 - Niños -->
-                <div class="product-card" data-category="niños">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Neon Glide">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Nuevo Producto 7 - Hombre -->
-                <div class="product-card" data-category="hombre">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Fusion Pro">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Nuevo Producto 8 - Mujer -->
-                <div class="product-card" data-category="mujer">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Nova Run">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Nuevo Producto 9 - Niños -->
-                <div class="product-card" data-category="niños">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Spark Kid">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-                
-                <!-- Nuevo Producto 10 - Hombre -->
-                <div class="product-card" data-category="hombre">
-                    <div class="product-image">
-                        <img src="img/imagen protada.png" alt="Modelo Apex Max">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">NOMBRE DEL ZAPATO</h3>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+<!-- Navegación -->
+<header>
+<div class="logo">
+<img src="img/principal.png" alt="Calzado AURUN" style="width: 5%; height: auto;">
+<a href="#home">AURUN</a>
+</div>
+<div class="main-nav">
+<nav>
+<ul class="nav-links">
+<li><a href="#home">HOME</a></li>
+<li><a href="#catalog">CATÁLOGO</a></li>
+<li><a href="#about">NOSOTROS</a></li>
+<li><a href="#contact">CONTACTO</a></li>
+</ul>
+</nav>
+</div>
+<a href="#catalog" class="buy-button">COMPRAR</a>
+<div class="menu-toggle" aria-label="Abrir menú" role="button" tabindex="0">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1 class="hero-logo">AURUN</h1>
+<p class="hero-tagline">Eleva tu estilo</p>
+<div class="hero-image">
+<img src="img/principal.png" alt="Calzado Futurista SHOPSPHERE">
+</div>
+<div class="hero-actions">
+<a href="#catalog" class="btn-discover">EXPLORAR</a>
+</div>
+</div>
+</section>
+<!-- Catálogo -->
+<section class="catalog fade-in" id="catalog">
+<h2 class="section-title">CATÁLOGO</h2>
+<!-- Contenedor de productos -->
+<div class="products-container">
+<!-- Producto 1 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/adi2000.png" alt="Modelo Neo Runner" loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">ADI 2000</h3>
+</div>
+</div>
+<!-- Producto 2 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/adidas campus.png" alt="Modelo Cyber Step"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">ADIDAS CAMPUS</h3>
+</div>
+</div>
+<!-- Producto 3 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/Adidas super star.png" alt="Modelo Quantum Boost"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">SUPER STAR</h3>
+</div>
+</div>
+<!-- Producto 4 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/Dolce gabbana .png" alt="Modelo Pulse Wave"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">DOLCE GABBANA</h3>
+</div>
+</div>
+<!-- Producto 5 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/jordan retro9.png" alt="Modelo Electro Flex"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">JORDAN RETRO 9</h3>
+</div>
+</div>
+<!-- Producto 6 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/new balance 550.png" alt="Modelo Neon Glide"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">NEW BALANCE 550</h3>
+</div>
+</div>
+<!-- Nuevo Producto 7 --->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/Nike mk2 tekno.png" alt="Modelo Fusion Pro"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">NIKE MK2 TEKNO</h3>
+</div>
+</div>
+<!-- Nuevo Producto 8 -->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/nike voremo.png" alt="Modelo Nova Run"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">NIKE VOREMO</h3>
+</div>
+</div>
+<!-- Nuevo Producto 9 -->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/skecher d lux.png" alt="Modelo Spark Kid"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">SKECHER D'LUX</h3>
+</div>
+</div>
+<!-- Nuevo Producto 10  -->
+<div class="product-card" data-category="hombre">
+<div class="product-image">
+<img src="img/skechers.png" alt="Modelo Apex Max"loading="lazy">
+</div>
+<div class="product-info">
+<h3 class="product-name">SKECHERS</h3>
+</div>
+</div>
+</div>
+<!-- Botón único para el catálogo de precios -->
+<div style="text-align: center; margin-top: 40px;">
+<a href="#" id="viewCatalogButton" class="btn-discover" style="display: inline-block;">VER CATÁLOGO DE PRECIOS</a>
+</div>
+</section>
+<!-- Sección Nosotros -->
+<section class="about fade-in" id="about">
+<div class="about-content">
+<h2 class="section-title">NOSOTROS</h2>
+<div class="text-container">
+<p>AURUN nació con una visión clara: revolucionar la forma en que las personas experimentan el calzado de estilo. Somos más que una tienda; somos curadores de tendencias y embajadores de la autenticidad.
+Nuestra misión es conectar a los entusiastas del calzado con modelos exclusivos que representan lo mejor del diseño contemporáneo. Cada par que ofrecemos ha sido seleccionado por su capacidad para combinar estética, funcionalidad y valor cultural.
+En AURUN entendemos que el calzado es una extensión de tu personalidad, una forma de expresión que merece ser celebrada. Por eso, nos comprometemos a ofrecerte no solo productos excepcionales, sino también el conocimiento y la asesoría que necesitas para hacer de cada adquisición una decisión informada y satisfactoria.
+Únete a nuestra comunidad y descubre por qué AURUN se ha convertido en el destino preferido para quienes buscan elevar su estilo desde los pies.</p>
+</div>
+<!-- Características -->
+<div class="about-grid">
+<div class="about-card">
+<div class="about-card-icon">
+<i class="fas fa-pencil-ruler"></i>
+</div>
+<h3 class="about-card-title">TENDENCIA</h3>
+<p class="about-card-text">
+En AURUN nos mantenemos a la vanguardia de las últimas tendencias globales en calzado. Nuestro equipo de expertos selecciona cuidadosamente cada modelo basándose en las pasarelas internacionales, colaboraciones exclusivas entre marcas y diseñadores, y los estilos emergentes de las capitales de la moda.
+</p>
+</div>
+<div class="about-card">
+<div class="about-card-icon">
+<i class="fas fa-microchip"></i>
+</div>
+<h3 class="about-card-title">INNOVACIÓN</h3>
+<p class="about-card-text">
+La innovación es el corazón de AURUN. Priorizamos modelos que incorporan las tecnologías más avanzadas en confort, rendimiento y sostenibilidad. Desde sistemas de amortiguación revolucionarios y materiales ultraligeros hasta procesos de fabricación de vanguardia que reducen el impacto ambiental.
+</p>
+</div>
+<div class="about-card">
+<div class="about-card-icon">
+<i class="fas fa-leaf"></i>
+</div>
+<h3 class="about-card-title">NATURALEZA</h3>
+<p class="about-card-text">
+Nuestro compromiso con la naturaleza se refleja en cada decisión que tomamos. Seleccionamos cuidadosamente modelos que incorporan materiales reciclados, procesos de producción responsables y embalajes eco-amigables. Trabajamos con marcas que comparten nuestra visión de un futuro más sostenible.
+</p>
+</div>
+</div>
+<!-- Botones de redes sociales -->
+<div class="about-social-icons">
+<h3>Síguenos en redes sociales</h3>
+<div class="social-icons-container">
+<a href="https://www.instagram.com/aurun_sneakerss/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@shopspheree1?_t=ZS-8wHNFY8rJn6&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto -->
+<section class="contact fade-in" id="contact">
+<div class="contact-content">
+<h2 class="section-title">CONTACTO</h2>
+<div class="text-container" style="margin-bottom: 40px;">
+    <p>¿Tienes preguntas sobre algún modelo? ¿Buscas asesoría personalizada o información sobre disponibilidad? Nuestro equipo está listo para ayudarte. Completa el formulario a continuación y nos pondremos en contacto contigo en menos de 24 horas. En AURUN valoramos tu interés y nos comprometemos a brindarte una atención excepcional.</p>
+</div>
+<form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/alejoimb10@outlook.com" method="POST">
+<div class="form-group">
+<label for="name" class="form-label">Nombre</label>
+<input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+</div>
+<div class="form-group">
+<label for="email" class="form-label">Email</label>
+<input type="email" id="email" name="email" class="form-input" placeholder="Tu correo electrónico" required>
+</div>
+<div class="form-group">
+<label for="phone" class="form-label">Teléfono</label>
+<input type="tel" id="phone" name="phone" class="form-input" placeholder="Tu número de teléfono">
+</div>
+<div class="form-group">
+<label for="subject" class="form-label">Asunto</label>
+<input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto de tu mensaje">
+</div>
+<div class="form-group">
+<label for="message" class="form-label">Mensaje</label>
+<textarea id="message" name="message" class="form-input form-textarea" placeholder="Escribe tu mensaje aquí" required></textarea>
+</div>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Nuevo mensaje de contacto AURUN">
+<button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+<div class="form-message success-message" id="successMessage">
+¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.
+</div>
+<div class="form-message error-message" id="errorMessage">
+Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo.
+</div>
+</form>
+</div>
+</section>
+<!-- Campo honeypot invisible para protección contra spam -->
+<div style="display:none">
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+</div>
+<!-- Footer -->
+<footer>
+<div class="footer-logo">AURUN</div>
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#catalog">Catálogo</a>
+<a href="#about">Nosotros</a>
+<a href="#contact">Contacto</a>
+<a href="#" id="privacyPolicyLink">Política de Privacidad</a>
+<a href="#" id="termsLink">Términos y Condiciones</a>
+</div>
+<!-- Iconos de redes sociales en el footer -->
+<div class="footer-social-icons">
+<a href="https://www.instagram.com/aurun_sneakerss/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@shopspheree1?_t=ZS-8wHNFY8rJn6&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+<div class="footer-copyright">
+&copy; 2025 AURUN. Todos los derechos reservados.<br>
+AURUN Sneakers | Bogotá, Colombia <br>
+Email: shopsphere754@gmail.com | Tel: +57 3011457487
+</div>
+<div class="footer-legal-info" style="font-size: 0.7rem; color: #666666; margin-top: 10px;">
+Las marcas comerciales, logotipos y nombres de productos mostrados en este sitio son propiedad de sus respectivos dueños.
+</div>
+</footer>
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/+573011457487" class="whatsapp-button" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+<!-- Modal para PDF de Detalles -->
+<div id="productModal" class="modal">
+<div class="modal-content">
+<span class="close-modal">&times;</span>
+<h2 class="modal-title" id="modalProductTitle">Detalles del Producto</h2>
+<div class="pdf-container" id="pdfContainer">
+</div>
+</div>
+</div>
+
+<!-- Modal para Política de Privacidad -->
+<div id="privacyPolicyModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" data-modal="privacyPolicyModal">&times;</span>
+        <h2 class="modal-title">Política de Privacidad</h2>
+        <div class="text-container" style="max-height: 70vh; overflow-y: auto;">
+            <p><strong>Última actualización:</strong> 14 de mayo de 2025</p>
             
-            <!-- Botón único para el catálogo de precios -->
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="#" id="viewCatalogButton" class="btn-discover" style="display: inline-block;">VER CATÁLOGO DE PRECIOS</a>
-            </div>
-        </section>
-        
-        <!-- Sección Nosotros -->
-        <section class="about fade-in" id="about">
-            <div class="about-content">
-                <h2 class="section-title">NOSOTROS</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #cccccc; line-height: 1.8;">
-                    AURUN nació con una misión clara: revolucionar la industria del calzado con diseños futuristas
-                    que combinan estilo, comodidad y tecnología. Cada par que creamos es una obra maestra de innovación,
-                    diseñado para aquellos que buscan marcar tendencia y destacar en cualquier entorno.
-                </p>
-                
-                <!-- Características -->
-                <div class="about-grid">
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <i class="fas fa-pencil-ruler"></i>
-                        </div>
-                        <h3 class="about-card-title">ACA VA INFORMACION</h3>
-                        <p class="about-card-text">
-                            ACA VA INFORMACION
-                        </p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3 class="about-card-title">ACA VA INFORMACION</h3>
-                        <p class="about-card-text">
-                            ACA VA INFORMACION
-                        </p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3 class="about-card-title">ACA VA INFORMACION</h3>
-                        <p class="about-card-text">
-                            ACA VA INFORMACION
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Botones de redes sociales -->
-                <div class="about-social-icons">
-                    <h3>Síguenos en redes sociales</h3>
-                    <div class="social-icons-container">
-                        <a href="https://www.instagram.com/aurun_sneakerss/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contacto -->
-        <section class="contact fade-in" id="contact">
-            <div class="contact-content">
-                <h2 class="section-title">CONTACTO</h2>
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/alejoimb10@outlook.com" method="POST">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="Tu correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="form-label">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Tu número de teléfono">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Asunto</label>
-                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto de tu mensaje">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Escribe tu mensaje aquí" required></textarea>
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Nuevo mensaje de contacto AURUN">
-                    <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
-                    <div class="form-message success-message" id="successMessage">
-                        ¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.
-                    </div>
-                    <div class="form-message error-message" id="errorMessage">
-                        Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo.
-                    </div>
-                </form>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer>
-            <div class="footer-logo">AURUN</div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#catalog">Catálogo</a>
-                <a href="#about">Nosotros</a>
-                <a href="#contact">Contacto</a>
-            </div>
+            <h3>1. Información que recopilamos</h3>
+            <p>En AURUN, recopilamos información personal cuando utilizas nuestro formulario de contacto, incluyendo: nombre, dirección de correo electrónico, número de teléfono y cualquier información adicional que proporciones en tu mensaje.</p>
             
-            <!-- Iconos de redes sociales en el footer -->
-            <div class="footer-social-icons">
-                <a href="https://www.instagram.com/aurun_sneakerss/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-            </div>
-            <div class="footer-copyright">
-                &copy; 2025 AUR. Todos los derechos reservados.
-            </div>
-        </footer>
-        
-        <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/+573011457487" class="whatsapp-button" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        
-        <!-- Modal para PDF de Detalles -->
-        <div id="productModal" class="modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h2 class="modal-title" id="modalProductTitle">Detalles del Producto</h2>
-                <div class="pdf-container" id="pdfContainer">
-                    <!-- El iframe del PDF se creará dinámicamente con JavaScript -->
-                </div>
-            </div>
+            <h3>2. Cómo utilizamos tu información</h3>
+            <p>Utilizamos la información recopilada para:</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Responder a tus consultas y solicitudes</li>
+                <li>Procesar pedidos y transacciones</li>
+                <li>Mejorar nuestros productos y servicios</li>
+                <li>Enviar comunicaciones de marketing (solo con tu consentimiento)</li>
+                <li>Cumplir con obligaciones legales</li>
+            </ul>
+            
+            <h3>3. Protección de datos</h3>
+            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos personales contra accesos no autorizados, pérdida o alteración.</p>
+            
+            <h3>4. Compartir información</h3>
+            <p>No vendemos ni alquilamos tu información personal a terceros. Podemos compartir tu información con proveedores de servicios que nos ayudan a operar nuestro sitio web y procesar pedidos.</p>
+            
+            <h3>5. Tus derechos</h3>
+            <p>Tienes derecho a acceder, rectificar, limitar y eliminar tus datos personales. Para ejercer estos derechos, contáctanos a través de nuestro formulario de contacto o por correo electrónico.</p>
+            
+            <h3>6. Cookies</h3>
+            <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Puedes configurar tu navegador para rechazar todas las cookies o para que te avise cuando se envía una cookie.</p>
+            
+            <h3>7. Cambios en esta política</h3>
+            <p>Podemos actualizar nuestra Política de Privacidad periódicamente. Te notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.</p>
+            
+            <h3>8. Contacto</h3>
+            <p>Si tienes preguntas sobre esta Política de Privacidad, contáctanos a través de nuestro formulario de contacto o por correo electrónico a shopsphere754@gmail.com.</p>
         </div>
     </div>
-    
-    <!-- Script JS -->
-    <script src="js/script.js"></script>
-</body
+</div>
+
+<!-- Modal para Términos y Condiciones -->
+<div id="termsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" data-modal="termsModal">&times;</span>
+        <h2 class="modal-title">Términos y Condiciones</h2>
+        <div class="text-container" style="max-height: 70vh; overflow-y: auto;">
+            <p><strong>Última actualización:</strong> 14 de mayo de 2025</p>
+            
+            <h3>1. Aceptación de los términos</h3>
+            <p>Al acceder y utilizar el sitio web de AURUN, aceptas estos Términos y Condiciones en su totalidad. Si no estás de acuerdo con estos términos, no debes utilizar nuestro sitio web.</p>
+            
+            <h3>2. Uso del sitio</h3>
+            <p>Te comprometes a utilizar nuestro sitio web solo para fines legales y de manera que no infrinja los derechos de terceros ni restrinja su uso del sitio.</p>
+            
+            <h3>3. Propiedad intelectual</h3>
+            <p>Todo el contenido de este sitio web, incluyendo textos, gráficos, logotipos, imágenes y software, está protegido por derechos de autor y otras leyes de propiedad intelectual.</p>
+            
+            <h3>4. Productos y precios</h3>
+            <p>Nos esforzamos por mostrar con precisión los colores y características de nuestros productos. Sin embargo, no podemos garantizar que la visualización de los colores en tu dispositivo sea exacta. Los precios están sujetos a cambios sin previo aviso.</p>
+            
+            <h3>5. Política de envíos y devoluciones</h3>
+            <p>Para información detallada sobre nuestras políticas de envío, entrega y devoluciones, por favor contáctanos directamente.</p>
+            
+            <h3>6. Limitación de responsabilidad</h3>
+            <p>AURUN no será responsable por daños indirectos, incidentales, especiales o consecuentes que resulten del uso o la imposibilidad de usar nuestros productos o servicios.</p>
+            
+            <h3>7. Ley aplicable</h3>
+            <p>Estos Términos y Condiciones se rigen por las leyes de Colombia, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+            
+            <h3>8. Cambios en los términos</h3>
+            <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web.</p>
+            
+            <h3>9. Contacto</h3>
+            <p>Si tienes preguntas sobre estos Términos y Condiciones, contáctanos a través de nuestro formulario de contacto o por correo electrónico a shopsphere754@gmail.com.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Banner de Cookies -->
+<div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra <a href="#" id="cookiePolicyLink">Política de Cookies</a>.</p>
+        <div class="cookie-buttons">
+            <button id="acceptCookies" class="cookie-btn accept">Aceptar</button>
+            <button id="rejectCookies" class="cookie-btn reject">Rechazar</button>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- Script JS -->
+<script src="js/script.js" defer></script>
+</body>
